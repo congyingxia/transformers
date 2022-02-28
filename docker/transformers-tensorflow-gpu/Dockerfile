@@ -9,7 +9,7 @@ RUN python3 -m pip install --no-cache-dir --upgrade pip
 
 ARG REF=master
 RUN git clone https://github.com/huggingface/transformers && cd transformers && git checkout $REF
-RUN python3 -m pip install --no-cache-dir -e ./transformers[dev,onnxruntime]
+RUN python3 -m pip install --no-cache-dir -e ./transformers[dev-tensorflow,onnxruntime]
 
 # If set to nothing, will install the latest version
 ARG TENSORFLOW=''
