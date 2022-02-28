@@ -324,6 +324,7 @@ extras["dev-torch"] = (
     + extras["docs_specific"]
     + extras["sklearn"]
     + extras["modelcreation"]
+    + extras["onnxruntime"]
 )
 extras["dev-tensorflow"] = (
         extras['testing']
@@ -335,6 +336,7 @@ extras["dev-tensorflow"] = (
         + extras["docs_specific"]
         + extras["sklearn"]
         + extras["modelcreation"]
+        + extras["onnx"]
 )
 extras["dev"] = (
     extras["all"]
